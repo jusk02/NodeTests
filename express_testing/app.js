@@ -13,7 +13,8 @@ app.get('/',function(req,res) {
 });
 
 app.get('/contact',function(req,res) {
-  res.sendFile(__dirname + '/contact.html');
+  // res.sendFile(__dirname + '/contact.html');
+  res.render('contact');
 });
 
 // route variables or params
