@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Node server</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h1>Query!</h1>
+    <p>Awesomesauce query person is <%= qs.person %></p>
+
+    <form action="/contact" method="POST" id="contact-form">
+      <label for="who">Who to contact</label>
+      <input type="text" name="who" value="<%= qs.person%>">
+      <label for="department">what department</label>
+      <input type="text" name="department" value="<%= qs.dept%>">
+      <label for="email">your email</label>
+      <input type="text" name="email">
+      <input type="submit" value="submit">
+    </form>
+
+  </body>
+</html>

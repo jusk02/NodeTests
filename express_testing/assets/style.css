@@ -1,0 +1,16 @@
+body{
+  background: slategrey
+}
+
+h1,h2{
+  color: orange
+}
+
+li,p{
+  color: white
+}
+
+ul{
+  list-style-type: none;
+  padding: 0
+}
